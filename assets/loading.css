@@ -1,0 +1,48 @@
+
+/* cacher le spinner Dash par défaut */
+._dash-loading {
+  display: none !important;
+}
+
+/* fond sombre pendant le loading */
+#loading-audio {
+  position: relative;
+}
+
+/* overlay */
+#loading-audio::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 999;
+  display: none;
+}
+
+/* afficher overlay quand loading */
+.dash-loading #loading-audio::before {
+  display: block;
+}
+
+/* loader UIverse style */
+.dash-loading #loading-audio::after {
+  content: "";
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 64px;
+  height: 64px;
+  margin-left: -32px;
+  margin-top: -32px;
+  border-radius: 50%;
+  border: 6px solid #ddd;
+  border-top-color: #0d6efd;
+  animation: spin 1s linear infinite;
+  z-index: 1000;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

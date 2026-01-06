@@ -1,0 +1,54 @@
+/* ====== POLICE MODERNE ====== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(120deg, #f4f9ff, #e8f1ff);
+}
+
+/* ====== TITRE ====== */
+.app-title {
+  color: #0d6efd;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* ====== UPLOAD AUDIO ====== */
+.upload-box {
+  background: white;
+  border: 2px dashed #0d6efd;
+  border-radius: 15px;
+  padding: 30px;
+  text-align: center;
+  color: #0d6efd;
+  font-size: 16px;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.upload-box:hover {
+  background: #f0f6ff;
+  border-color: #084298;
+}
+
+/* ====== AUDIO PLAYER ====== */
+audio {
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* ====== CARDS ====== */
+.result-card {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  margin-top: 15px;
+  box-shadow: 0 10px 25px rgba(13,110,253,0.12);
+}
+
+/* ====== LABEL ====== */
+label {
+  font-weight: 500;
+  color: #084298;
+}
